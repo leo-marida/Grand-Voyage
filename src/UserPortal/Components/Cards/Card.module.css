@@ -1,0 +1,100 @@
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background: white;
+  max-width: 300px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.cardImageContainer {
+  position: relative;
+  height: 200px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 16px;
+}
+
+.cardInfo {
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.cardSubtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 12px 0;
+}
+
+.cardMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardMetaMain {
+  color: #1033f7;
+  font-weight: 600;
+}
+
+.cardMetaSecondary {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.cardFooter {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.cardPrice {
+  color: #1033f7;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.cardDetails {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.cardButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #1033f7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cardButton:hover {
+  background-color: #0a25b5;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,162 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #1033f7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 200px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background-color: #1033f7;
+}
+
+.companyName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    white-space: nowrap;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 25px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.buttonContainer button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    color: white;
+}
+
+.buttonContainer button:hover {
+    background-color: #f5f5f5;
+    color: #1033f7;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    min-width: 200px;
+    justify-content: flex-end;
+}
+
+.profileIcon {
+    position: relative;
+    display: inline-block;
+}
+
+.profileContainer img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.profileContainer img:hover {
+    transform: scale(1.1);
+}
+
+.travelCase,
+.userProfile {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    filter: brightness(0) invert(1); 
+}
+
+.profileIcon:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: #1033f7;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1001;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0.2rem 0.3rem;
+    }
+    
+    .buttonContainer {
+        gap: 0.2rem;
+    }
+    
+    .buttonContainer button {
+        font-size: 0.9rem;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 900px) {
+    .companyName {
+        font-size: 1.2rem;
+    }
+    
+    .buttonContainer {
+        gap: 10px;
+    }
+    
+    .profileContainer {
+        gap: 15px;
+    }
+}

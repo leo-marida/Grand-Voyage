@@ -1,0 +1,152 @@
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background: white;
+    max-width: 300px;
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.cardImageContainer {
+    position: relative;
+    height: 290px;
+    background-color: #f8f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plusSign {
+    font-size: 4rem;
+    color: #1033f7;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardContent {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cardInfo {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.cardSubtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.cardMeta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cardMetaMain {
+    color: #1033f7;
+    font-weight: 600;
+}
+
+.cardMetaSecondary {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.cardFooter {
+    margin-top: auto;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.cardPrice {
+    color: #1033f7;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.cardDetails {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #1033f7;
+}
+
+.formGroup textarea {
+    min-height: 60px;
+    resize: vertical;
+}
+
+.cardButton {
+    background-color: #f0f2ff;
+    color: #1033f7;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.cardButton:hover {
+    background-color: #e0e4ff;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}

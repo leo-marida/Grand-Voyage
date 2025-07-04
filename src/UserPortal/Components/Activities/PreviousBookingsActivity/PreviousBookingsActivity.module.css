@@ -1,0 +1,58 @@
+.previousBookingsContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.previousBookingsTitle {
+  font-size: 2rem;
+  color: #1a237e;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #1033f7;
+  font-weight: 700;
+}
+
+.previousBookingsList {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.previousBookingsList:hover .hotelCard {
+  transition: transform 0.2s ease;
+}
+
+.previousBookingsList:hover .hotelCard:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .previousBookingsContainer {
+      padding: 1.5rem;
+  }
+  
+  .previousBookingsTitle {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+  }
+  
+  .previousBookingsList {
+      gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .previousBookingsContainer {
+      padding: 1rem;
+  }
+  
+  .previousBookingsTitle {
+      font-size: 1.5rem;
+      padding-bottom: 0.75rem;
+  }
+  
+  .previousBookingsList {
+      grid-template-columns: 1fr;
+  }
+}

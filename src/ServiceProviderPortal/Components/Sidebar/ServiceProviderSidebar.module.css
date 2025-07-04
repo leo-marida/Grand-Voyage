@@ -1,0 +1,77 @@
+
+.sidebar {
+    position: fixed;
+    left: 10px;
+    top: 120px;
+    bottom: 0;
+    width: 300px; 
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    z-index: 900;
+    border-radius: 20px;
+  }
+  
+  .statCard {
+    background: #f8f9ff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .statValue {
+    font-size: 2rem;
+    color: #1033f7;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .statSubtext {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .statTrend {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .trendUp {
+    color: #00c853;
+  }
+
+  .trendDown {
+    color: #ff3d00;
+  }
+  
+  .progressBar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-top: 15px;
+    overflow: hidden;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background: #1033f7;
+    width: 0;
+    transition: width 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .revenueBreakdown {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+  }
+  
+  .revenueBreakdown div {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+  }

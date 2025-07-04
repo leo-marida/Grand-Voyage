@@ -1,0 +1,105 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: white;
+  }
+  
+  .contactCard {
+    background-color: #ffffff;
+    border: 1px solid #dce5f3;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 82, 204, 0.1);
+  }
+  
+  .contactTitle {
+    font-size: 32px;
+    color: #1033f7;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contactDescription {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .contactForm label {
+    display: block;
+    margin-bottom: 20px;
+    color: #003366;
+    font-weight: 500;
+  }
+  
+  .contactForm input,
+  .contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd6ee;
+    border-radius: 8px;
+    margin-top: 6px;
+    font-size: 15px;
+    outline: none;
+  }
+  
+  .contactForm input:focus,
+  .contactForm textarea:focus {
+    border-color: #0052cc;
+    box-shadow: 0 0 4px rgba(0, 82, 204, 0.2);
+  }
+  
+  .contactForm button {
+    background-color: #1033f7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .contactForm button:hover {
+    background-color: #003d99;
+  }
+  
+  .socialSection {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .socialSection h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 15px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .socialImg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+  }
+  
+  .socialImg:hover {
+    transform: scale(1.1);
+  }
+  

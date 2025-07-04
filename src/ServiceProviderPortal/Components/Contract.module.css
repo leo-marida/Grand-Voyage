@@ -1,0 +1,153 @@
+
+  
+  .contractContainer {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .contractTitle {
+    margin: 0;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1033f7;
+    text-align: center;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  .input input,
+  .input select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .dateInputs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .dateInput {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dateInput label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  .dateInput input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .priceInputs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .priceInput {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .priceInput label {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  .priceInput input {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .buttons button[type="button"] {
+    background: none;
+    color: #1033f7;
+  }
+  
+  .buttons button[type="button"]:hover {
+    background-color: #1033f7;
+    color: #f5f5f5;
+  }
+  
+  .buttons button[type="submit"] {
+    background-color: #1033f7;
+    color: #f5f5f5;
+  }
+  
+  .buttons button[type="submit"]:hover {
+    background-color: #0021db;
+    color: #f5f5f5;
+  }
+  
+  @media (max-width: 600px) {
+    .contractContainer {
+      width: 95%;
+    }
+    
+    .contractTitle {
+      font-size: 1.3rem;
+      padding: 10px 15px;
+    }
+    
+    .inputs {
+      padding: 15px;
+    }
+    
+    .buttons button {
+      padding: 8px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  

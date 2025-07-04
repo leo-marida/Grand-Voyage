@@ -1,0 +1,123 @@
+.sidebar {
+    position: fixed;
+    left:  10px;
+    top: 120px;
+    bottom: 0;
+    width: 300px;
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    z-index: 900;
+    border-radius: 20px;
+  }
+  
+  .filterSection {
+    margin-bottom: 30px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.2rem;
+    color: #1033f7;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .filterGroup {
+    margin-bottom: 25px;
+  }
+  
+  .filterGroup label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .filterInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .filterSelect {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    appearance: none;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .checkboxGroup label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+  }
+  
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  .checkboxLabel input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #1033f7;
+  }
+  
+  .checkboxLabel:hover {
+    color: #1033f7;
+  }
+  
+  .priceRange {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .priceRange input {
+    width: 45%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .applyButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #1033f7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .applyButton:hover {
+    background-color: #0a25b5;
+    transform: translateY(-1px);
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 250px;
+      padding: 15px;
+    }
+  }
